@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('./description/coverImg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+main:hover{
+    transition: 2s;
+    background-image: url("./description/biggy.jpg");   
+}
+.imgLogo{
+    width: 7rem;
+    border-radius: 50%;
+}
+
+/* ---main conatiner  */
+
+
+    /* ----headerMainTitles----  */
+
+
+@media screen and (max-width: 768px){
+    .imgLogo{
+        width: 9rem;
+    } 
+    .description{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10rem 5rem;
+    }
+
+    .formulaire{
+       display: flex;
+       flex-direction: column;
+       background-color: rgba(250, 250, 250, 0.53);
+       transition:transform .6s ease-out, opacity .6s ease-out;
+       /* border: 1px solid rgb(0, 0, 0); */
+       border-radius: 30px;
+       width: 29rem;
+       height: 20rem;
+       align-items: center;
+       gap: 10px;
+    }
+     
+    h1{
+        text-align: center;
+    }
+     
+    .form{
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+    .inputContainer{
+        width: 20rem;
+        height: 3rem;
+    }
+
+    .subButton{
+        width: 9rem;
+        height: 3rem;
+        border-radius: 20px;
+        background-color: rgb(2, 2, 110);
+        color: white;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .imgLogo{
+        width: 9rem;
+    }
+    .description{
+         display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 8rem 1.5rem;
+    }
+    .formulaire{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 20rem;
+    }
+
+     h1{
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 2rem;
+    }
+    .inputContainer{
+        width: 17rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .imgLogo{
+        width: 9rem;
+    }
+    .description{
+         display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 6rem 1rem;
+    }
+    .formulaire{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 18rem;
+    }
+    
+    h1{
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 2rem;
+    }
+    .inputContainer{
+        width: 15rem;
+    }
+    .subButton{
+        width: 8rem;
+        height: 2.6rem;
+        font-size: 1rem;
+        align-self: flex-end;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .imgLogo{
+        width: 9rem;
+    }
+    .description{
+         display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5rem .8rem;
+    }
+    .formulaire{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 16rem;
+    }
+
+    .subButton{
+        width: 8rem;
+        height: 2.6rem;
+        font-size: 1rem;
+        align-self: flex-end;
+    }
+
+    .inputContainer{
+        width: 14rem;
+    }
+}
