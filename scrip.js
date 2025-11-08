@@ -1,6 +1,6 @@
-const burger = document.getElementById("burger");
-const listHeader = document.getElementById("listHeader");
+const toggle = document.getElementById("burgerList");
+const listHome = document.getElementById("menuList");
 
-burger.addEventListener('click', () =>{
-    listHeader.classList.toggle('active');
-});
+toggle.addEventListener('click', () => {
+    listHome.classList.toggle("hidden");
+})
